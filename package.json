@@ -1,15 +1,15 @@
 {
-	"name": "latex-support",
-	"version": "2.1.0",
-	"displayName": "LaTeX language support",
-	"description": "LaTeX language support for Visual Studio Code",
+	"name": "latex-academic",
+	"version": "0.1.0",
+	"displayName": "LaTeX language academic",
+	"description": "LaTeX language academic for Visual Studio Code",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/ProAdd-ons/vscode-LaTeX-support"
+		"url": "https://github.com/schoolknight/vscode-LaTeX-academic"
 	},
 	"license": "MIT",
 	"icon": "images/icon.png",
-	"publisher": "torn4dom4n",
+	"publisher": "schoolknight",
 	"categories": [
 		"Programming Languages"
 	],
@@ -77,6 +77,11 @@
 				"language": "tex",
 				"scopeName": "text.tex",
 				"path": "./grammars/TeX.json"
+			},
+			{
+				"path": "./grammars/todo.json",
+				"scopeName": "text.paper",
+				"injectTo": ["comment","text.tex"]
 			}
 		],
 		"snippets": [
